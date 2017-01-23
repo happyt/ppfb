@@ -19,7 +19,7 @@ This is a set of pages to show the scores from the World Championships at Alexan
 - make react force update
 - no scores if no players
 - add flags offsets
-
+- add doubles taken?
 
 ### = dev start =
 
