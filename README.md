@@ -14,6 +14,13 @@ This is a set of pages to show the scores from the World Championships at Alexan
 - live update
 - convert draw
 
+- change data to not put in empty sets
+- add nationality to players
+- make react force update
+- no scores if no players
+- add flags offsets
+
+
 ### = dev start =
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
