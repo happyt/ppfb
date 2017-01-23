@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.heading {
+  margin: auto;
+  background: lightskyblue;
+  border: 2px solid white;
+  color: black;
+  width: 100%;
+  padding: 4px 5px;
+}
+
+.match {
+  background: #000;
+  border: 1px solid white;
+  color: #fff;
+  padding: 5px 5px;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.scores {
+    float: right;
+    font-size: 14px;
+}
+
+.set {
+    min-width: 20px;
+    text-align: center;
+}
+
+sup {
+  position: absolute;
+    top: -6px;
+  font-size: 10px;
+      line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.player {
+    font-size: 12px;
+    width: 96%;
+}
+
+
+div {
+  float: left;
+  display: block;
+}
+
+.seed {
+  margin-left: 5px;
+}
+
+.flag {
+    display: inline-block;
+    background-image: url(images/flags-standard.png);
+    background-position: 0 -440px;
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 18px;
+   margin-left: 10px;
+   margin-right: 5px;
+}
+
+.GBR {
+    background-position: 0 -440px;
+}
+.BUL {
+    background-position: 0 -154px;
+}
+
+.FRA {
+    background-position: 0 -418px;
+}
+
+.star {
+    display: inline-block;
+    background-image: url(images/standard.png);
+    background-position: 0 -164px;
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 18px;
+    margin-left: 5px;
+}
+.winner {
+    display: inline-block;
+    background-image: url(images/standard.png);
+    background-position: 0 -1191px;
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 18px;
+    margin-left: 5px;
+}
