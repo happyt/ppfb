@@ -25,9 +25,9 @@ const fb = firebase
 fb.on('value', snapshot => {  
   const store = snapshot.val();
   const time = new Date().time;
-  console.log("Update");
+  
   ReactDOM.render(
-    <App {...store, time} />
+    <App {...store} />
      ,
     document.getElementById('root')
   );
