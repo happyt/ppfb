@@ -20,7 +20,7 @@ export default class PPMatch extends Component {
         return (
             <div className="match">
                 <Player player={this.state.mm.PlayerA ? this.state.mm.PlayerA : "-"}
-                    nation="GBR"
+                    nation={this.state.mm.CountryA ? this.state.mm.CountryA : ""}
                     scores={setsA}/>
                 <Player player={this.state.mm.PlayerB ? this.state.mm.PlayerB : "-"}
                     star="*"

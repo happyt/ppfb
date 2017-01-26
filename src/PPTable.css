@@ -81,14 +81,21 @@ div {
    margin-right: 5px;
 }
 
-.GBR {
+.Gbr {
     background-position: 0 -440px;
 }
-.BUL {
+
+.Ger {
+    background-position: 0 -500px;
+}
+.Bul {
     background-position: 0 -154px;
 }
+.Hun {
+    background-position: 0 -184px;
+}
 
-.FRA {
+.Fra {
     background-position: 0 -418px;
 }
 
