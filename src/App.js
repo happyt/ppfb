@@ -8,13 +8,8 @@ import './PPTable.css';
 
 export default class App extends Component {
 
-shouldComponentUpdate(nextProps, nextState) {
-//    console.log('shouldComponentUpdate');
-    return true;
-  }
-
   render() {
-    
+    const d = new Date().toLocaleString();    
   //  console.log("APP", JSON.stringify(this.props.matches.Matches[0].Sets[0]));
 
     return (
@@ -44,7 +39,7 @@ shouldComponentUpdate(nextProps, nextState) {
           <PPDraw start="110" end="111" group="4" db={this.props} />
         </div>
         <div>
-          <p>Results 2017</p>
+          <p>Results 2017 - {d}</p>
         </div>
       </div>
     );
