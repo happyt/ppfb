@@ -10,6 +10,7 @@ export default class PPMatch extends Component {
         }
     }
     render() {
+ //       console.log("match");
         const setsA = this.state.mm.Sets.map((ss, index) => {
              return(ss.ScoreA);
         });

@@ -17,13 +17,10 @@ export default class PPDraw extends Component {
         ));
 
         return (
-            <div>
-                <div className="column">
-                    <PPLastHeader group={this.props.group} />
-                    {listItems}
-                </div>
+            <div className="lastColumn">
+                <PPLastHeader group={this.props.group} />
+                {listItems}
             </div>
-
         );
     }
 }

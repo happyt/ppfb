@@ -10,10 +10,7 @@ export default class PPLastHeader extends Component {
     render() {
 
         return (
-            <div>
                 <div className="heading">LAST {this.state.grpX}</div>
-            </div>
-
         );
     }
 }

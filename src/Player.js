@@ -7,11 +7,14 @@ export default class Player extends Component {
         }
     }
     render() {
-        
-        const listScores = this.props.scores.map((ss, index) => (
-            <div key={index} className="set">{ss}</div>
-            
+//        console.log("player");
+ //       const d = new Date().getSeconds();
+       // console.log("Secs ", d);
+        let listScores = "";
+        listScores = this.props.scores.map((ss, index) => (
+            <div key={index} className="set">{ss}</div>          
         ));
+
         
         return (
             <div className="player">
@@ -24,7 +27,7 @@ export default class Player extends Component {
                     { this.props.star ? <div className="star"></div> : "" }
                     { this.props.winner ? <div className="winner"></div> : "" }
                     <div className="scores">
-                        {listScores}
+                         {listScores}
                     </div>
             </div>
         );

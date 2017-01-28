@@ -21,17 +21,14 @@ const fb = firebase
   .database()
   .ref();
 
-
 fb.on('value', snapshot => {  
   const store = snapshot.val();
- // const time = new Date().time;
-  
   ReactDOM.render(
-    <App {...store} />
-     ,
+    <App {...store} />,
     document.getElementById('root')
   );
 });
+
 
 
 // WAS THIS
