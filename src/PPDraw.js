@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PPGroupHeader from './PPGroupHeader.js';
+import PPLastHeader from './PPLastHeader.js';
 import PPMatch from './PPMatch.js';
 
 export default class PPDraw extends Component {
@@ -19,7 +19,7 @@ export default class PPDraw extends Component {
         return (
             <div>
                 <div className="column">
-                    <PPGroupHeader group={this.props.group} />
+                    <PPLastHeader group={this.props.group} />
                     {listItems}
                 </div>
             </div>

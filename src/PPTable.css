@@ -26,6 +26,7 @@ body {
 }
 
 .match {
+  margin: auto;
   background: #000;
   border: 1px solid white;
   color: #fff;
@@ -94,21 +95,25 @@ div {
 .tab0 {
   width: 18px;
   background: black;
+  margin-right: 1px;
 }
 
 .tab1 {
   width: 18px;
   background: orange;
+  margin-right: 1px;
 }
 
 .tab2 {
   width: 18px;
   background: lawngreen;
+  margin-right: 1px;
 }
 
 .tab3 {
   width: 18px;
   background: red;
+  margin-right: 1px;
 }
 
 .flag {
