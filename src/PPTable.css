@@ -91,6 +91,26 @@ div {
     margin-left: 5px;
 }
 
+.tab0 {
+  width: 18px;
+  background: black;
+}
+
+.tab1 {
+  width: 18px;
+  background: orange;
+}
+
+.tab2 {
+  width: 18px;
+  background: lawngreen;
+}
+
+.tab3 {
+  width: 18px;
+  background: red;
+}
+
 .flag {
     display: inline-block;
     background-image: url(images/flags-standard.png);
@@ -164,7 +184,7 @@ div {
 .Eng { background-position: 0 -1298px }
 .Sco { background-position: 0 -1320px }
 .Wal { background-position: 0 -1342px }
-.NIr { background-position: 0 -1364px }
+.Nir { background-position: 0 -1364px }
 .CI { background-position: 0 -1386px }
 .Grc { background-position: 0 -1408px }
 .Hkg { background-position: 0 -1430px }

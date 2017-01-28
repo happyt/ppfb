@@ -15,7 +15,8 @@ export default class Player extends Component {
         
         return (
             <div className="player">
-                <div className="name">{this.props.wins} {this.props.player}</div>             
+                <div className="name">
+                    <div className={this.dynamicTab()}>{this.props.wins}</div> {this.props.player}</div>             
                     { this.props.nation ? 
                         <div className="nationality">
                     <div className={this.dynamicClass()}></div> {this.props.nation}</div>
@@ -30,5 +31,8 @@ export default class Player extends Component {
     }
      dynamicClass =function(){
         return "flag " + this.props.nation;
+    }
+     dynamicTab =function(){
+        return "tab" + this.props.wins;
     }
 }
