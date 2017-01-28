@@ -25,13 +25,13 @@ export default class PPMatch extends Component {
                     winner={this.state.mm.Result === 1 ? "*" : ""}
                     star={this.state.mm.SeedA > 0 ? "*" : ""}
                     scores={setsA}
-                    wins={this.state.mm.TabA} />
+                    wins={this.state.mm.ID < 80 ? this.state.mm.TabA : "0"} />
                 <Player player={this.state.mm.PlayerB ? this.state.mm.PlayerB : "-"}
                     nation={this.state.mm.CountryB ? this.state.mm.CountryB : ""}
                     winner={this.state.mm.Result === 2 ? "*" : ""}
                     star={this.state.mm.SeedB > 0 ? "*" : ""}
                     scores={setsB}
-                    wins={this.state.mm.TabB} />
+                    wins={this.state.mm.ID < 80 ? this.state.mm.TabB : "0"} />
             </div>
         );
     }

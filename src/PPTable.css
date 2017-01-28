@@ -30,6 +30,14 @@ body {
   padding: 4px 5px;
 }
 
+.lastHeading {
+  background: lightskyblue;
+  border: 2px solid blue;
+  color: black;
+  width: 100%;
+  padding: 4px 5px;
+}
+
 .match {
   margin: auto;
   background: #000;
@@ -100,25 +108,31 @@ div {
 .tab0 {
   width: 18px;
   background: black;
-  margin-right: 1px;
+  color: black;
+  padding: 1px 1px;
+  margin-right: 2px;
 }
 
 .tab1 {
   width: 18px;
   background: orange;
-  margin-right: 1px;
+  padding: 1px 1px;
+  margin-right: 2px;
 }
 
 .tab2 {
   width: 18px;
   background: lawngreen;
-  margin-right: 1px;
+  padding: 1px 1px;
+  margin-right: 2px;
 }
 
 .tab3 {
   width: 18px;
+  color: red;
   background: red;
-  margin-right: 1px;
+  padding: 1px 1px;
+  margin-right: 2px;
 }
 
 .flag {

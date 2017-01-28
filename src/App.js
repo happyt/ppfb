@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import PPTable from './PPTable.js';
 import PPDraw from './PPDraw.js';
-import PPLastHeader from './PPLastHeader.js';
+// import PPLastHeader from './PPLastHeader.js';
 import './App.css';
 import './PPTable.css';
 
@@ -16,8 +16,6 @@ shouldComponentUpdate(nextProps, nextState) {
   render() {
     
   //  console.log("APP", JSON.stringify(this.props.matches.Matches[0].Sets[0]));
-
-    
 
     return (
       <div className="App">
@@ -39,13 +37,6 @@ shouldComponentUpdate(nextProps, nextState) {
           <PPTable group="7" db={this.props} />
         </div>
         <div className="columns">
-          <PPLastHeader start="80" end="96"  group="0" />
-          <PPLastHeader start="80" end="96"  group="1" />
-          <PPLastHeader start="80" end="96"  group="2" />
-          <PPLastHeader start="80" end="96"  group="3" />
-          <PPLastHeader start="80" end="96"  group="4" />
-        </div>
-        <div className="columns">
           <PPDraw start="80" end="96"  group="0" db={this.props} />
           <PPDraw start="96" end="104" group="1" db={this.props} />
           <PPDraw start="104" end="108" group="2" db={this.props} />
@@ -53,9 +44,10 @@ shouldComponentUpdate(nextProps, nextState) {
           <PPDraw start="110" end="111" group="4" db={this.props} />
         </div>
         <div>
-          <p>{JSON.stringify(this.props.matches.Matches[0])}</p>
+          <p>Results 2017</p>
         </div>
       </div>
     );
   }
 }
+//  <p>{JSON.stringify(this.props.matches.Matches[80])}</p>
