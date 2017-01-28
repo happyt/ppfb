@@ -6,8 +6,18 @@ import './App.css';
 import './PPTable.css';
 
 export default class App extends Component {
+
+shouldComponentUpdate(nextProps, nextState) {
+    console.log('shouldComponentUpdate');
+    return true;
+  }
+
   render() {
     
+    console.log("APP", JSON.stringify(this.props.matches.Matches[0].Sets[0]));
+
+    
+
     return (
       <div className="App">
         <div className="App-header">
@@ -28,14 +38,14 @@ export default class App extends Component {
           <PPTable group="7" db={this.props} />
         </div>
          <div className="columns">
-          <PPDraw start="80" end="96" db={this.props} />
+         <PPDraw start="80" end="96" db={this.props} />
          <PPDraw start="96" end="104" db={this.props} />
          <PPDraw start="104" end="108" db={this.props} />
          <PPDraw start="108" end="111" db={this.props} />
          <PPDraw start="111" end="112" db={this.props} />
         </div>
         <div>
-          <p>{JSON.stringify(this.props.matches.Matches[81])}</p>
+          <p>{JSON.stringify(this.props.matches.Matches[0])}</p>
         </div>
       </div>
     );

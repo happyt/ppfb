@@ -4,6 +4,7 @@ import Player from './Player.js';
 export default class PPMatch extends Component {
     constructor(props) {
         super(props);
+//        console.log(JSON.stringify(props));
         this.state = {
             mm : JSON.parse(this.props.matchData)
         }

@@ -9,6 +9,8 @@ export default class PPTable extends Component {
 
         const startNo = this.props.group * 10;
         this.state = { start: startNo, matches: this.props.db.matches.Matches.slice(startNo, startNo + 10) };
+        console.log("table");
+
     }
     render() {
         const listItems = this.state.matches.map((mm, index) => (

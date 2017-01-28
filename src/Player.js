@@ -7,6 +7,7 @@ export default class Player extends Component {
         }
     }
     render() {
+        
         const listScores = this.props.scores.map((ss, index) => (
             <div key={index} className="set">{ss}</div>
             
