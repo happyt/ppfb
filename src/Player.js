@@ -14,7 +14,7 @@ export default class Player extends Component {
         
         return (
             <div className="player">
-                <div className="name">{this.props.player}</div>             
+                <div className="name">{this.props.wins} {this.props.player}</div>             
                     { this.props.nation ? 
                         <div className="nationality">
                     <div className={this.dynamicClass()}></div> {this.props.nation}</div>

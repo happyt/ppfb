@@ -22,12 +22,14 @@ export default class PPMatch extends Component {
                     nation={this.state.mm.CountryA ? this.state.mm.CountryA : ""}
                     winner={this.state.mm.Result === 1 ? "*" : ""}
                     star={this.state.mm.SeedA > 0 ? "*" : ""}
-                    scores={setsA} />
+                    scores={setsA}
+                    wins={this.state.mm.TabA} />
                 <Player player={this.state.mm.PlayerB ? this.state.mm.PlayerB : "-"}
                     nation={this.state.mm.CountryB ? this.state.mm.CountryB : ""}
                     winner={this.state.mm.Result === 2 ? "*" : ""}
                     star={this.state.mm.SeedB > 0 ? "*" : ""}
-                    scores={setsB} />
+                    scores={setsB}
+                    wins={this.state.mm.TabB} />
             </div>
         );
     }
