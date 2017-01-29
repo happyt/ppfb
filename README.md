@@ -9,21 +9,22 @@ This is a set of pages to show the scores from the World Championships at Alexan
 
 ### next ###
 - change PP prefixes
-- add qualifier colours
-- add border for main matches ?
-- live update
-- convert draw
-
-- change data to not put in empty sets
-- add nationality to players
-- make react force update
-- no scores if no players
-- add flags offsets
 - add doubles taken?
+- web page to score, just points, result
 
 ### = dev start =
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+Added the Firebase connections in index.js
+
+Decided to host on Firebase hosting for simplicity.
+Used 'npm install firebase-tools'.
+Then 'firebase init' which looks for a 'public' directory, change this in the .json to 'build'.
+
+Use 'npm run build' to package to build directory.
+Use 'firebase login' then 'firebase deploy' to send to web site.
+Example online [https://pingpong-32ba1.firebaseapp.com/](https://pingpong-32ba1.firebaseapp.com/)
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).

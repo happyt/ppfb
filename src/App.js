@@ -10,7 +10,7 @@ export default class App extends Component {
 
   render() {
     const d = new Date().toLocaleString();    
-  //  console.log("APP", JSON.stringify(this.props.matches.Matches[0].Sets[0]));
+    console.log("APP", JSON.stringify(this.props.matches.Matches[0]));
 
     return (
       <div className="App">
