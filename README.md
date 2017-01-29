@@ -5,7 +5,8 @@ This is a set of pages to show the scores from the World Championships at Alexan
 
 - I started with flex layouts in html, groups and draw.html
 - Now have moved into a react project, see below.
-- inspiration from http://matchcentre.lta.org.uk/championships/draw.html
+- inspiration from [LTA Match centre](http://matchcentre.lta.org.uk/championships/draw.html)
+- there is a retina image file version
 
 ### next ###
 - change PP prefixes
