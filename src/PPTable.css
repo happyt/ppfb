@@ -137,7 +137,7 @@ div {
 
 .flag {
     display: inline-block;
-    background-image: url(images/flags-retina.png);
+    background-image: url(images/flags-standard.png);
     background-position: 0 -440px;
     background-repeat: no-repeat;
     height: 12px;
