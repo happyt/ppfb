@@ -4,17 +4,9 @@ import ReactDOM from 'react-dom';
 import * as firebase from 'firebase';
 import App from './App';
 import './index.css';
-// import PPTable from './PPTable.js';
 
 // Initialize Firebase
-var config = {
-  apiKey: "AIzaSyCzuNzPtwsA35C7LLqG5GGaXgHFgyTpzjA",
-  authDomain: "pingpong-32ba1.firebaseapp.com",
-  databaseURL: "https://pingpong-32ba1.firebaseio.com",
-  storageBucket: "pingpong-32ba1.appspot.com",
-  messagingSenderId: "1002315054645"
-};
-// firebase.initializeApp(config);
+var config = require(`../fbconfig.js`);
 
 const fb = firebase  
   .initializeApp(config)

@@ -10,13 +10,14 @@ export default class App extends Component {
 
   render() {
     const d = new Date().toLocaleString();    
-    console.log("APP", JSON.stringify(this.props.matches.Matches[0]));
+//    console.log("APP", JSON.stringify(this.props.matches.Matches[0]));
+//    console.log("APP", JSON.stringify(this.props.PingPong2018.Matches[0]));
 
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>World Championship Ping Pong</h2>
+          <h2>World Championship Ping Pong 2018</h2>
         </div>
 
         <div className="columns">
