@@ -40,7 +40,7 @@ export default class App extends Component {
           <PPDraw start="110" end="111" group="4" db={this.props} />
         </div>
         <div>
-          <p>Results 2017 - {d}</p>
+          <p>Results 2017,8,9 - {d}</p>
         </div>
       </div>
     );

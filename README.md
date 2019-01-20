@@ -31,17 +31,23 @@ Example online [https://pingpong-32ba1.firebaseapp.com/](https://pingpong-32ba1.
 
 Updated 2018
 maybe
-npm install -g firebase-tools
-firebase login
-firebase init
+- npm install -g firebase-tools
+- firebase login (i.ht)
+- firebase init  (??)
 
 pull the project
-npm install
-npm run build
-firebase deploy
+- npm install
+- npm run build
+- firebase deploy
 
-change database reference in index.js 
-change database reference in .firebaserc
-change refecrentes in PPTable, PPDraw
+- change database reference in index.js 
+- change database reference in .firebaserc
+- change references in PPTable, PPDraw
 
+Update 2019 similar to above
+- consolidated scores per year
+- didn't do firebase init
+ - npm install -g pushstate-server
+ - pushstate-server build
+ - start http://localhost:9000
 
