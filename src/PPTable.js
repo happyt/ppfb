@@ -5,9 +5,10 @@ import PPMatch from './PPMatch.js';
 export default class PPTable extends Component {
 
     render() {
+    //    debugger;
         const startNo = this.props.group * 10;
 //        const tableMatches = this.props.db.matches.Matches.slice(startNo, startNo + 10);
-        const tableMatches = this.props.db.PingPong2018.Matches.slice(startNo, startNo + 10);
+        const tableMatches = this.props.dbm.Matches.slice(startNo, startNo + 10);
 
         const listItems = tableMatches.map((mm, index) => (
             <PPMatch key={index} matchData={JSON.stringify(mm)} />

@@ -8,7 +8,7 @@ export default class PPDraw extends Component {
         const startNo = this.props.start;
         const endNo = this.props.end;
 //        const matches = this.props.db.matches.Matches.slice(startNo, endNo);
-        const matches = this.props.db.PingPong2018.Matches.slice(startNo, endNo);
+        const matches = this.props.dbm.Matches.slice(startNo, endNo);
         
         const listItems = matches.map((mm, index) => (
             <PPMatch key={index} matchData={JSON.stringify(mm)} />

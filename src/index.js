@@ -15,7 +15,7 @@ const fb = firebase
 
 fb.on('value', snapshot => {  
   const store = snapshot.val();
-  debugger;
+//  debugger;
   ReactDOM.render(
     <App {...store} />,
     document.getElementById('root')
