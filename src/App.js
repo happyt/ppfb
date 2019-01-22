@@ -12,11 +12,12 @@ export default class App extends Component {
 
   render() {
     const d = new Date().toLocaleString();    
+    
+    // adds the ? to the property list
     const xx = qs.parse(location.search.slice(1));
-    // adds a ? to the first property name
-    let year = (xx["year"]) ? xx["year"] : "2019" ;
+
+    let year = (xx.year) ? xx.year : "2019" ; // default
 //    debugger;
-//    year = (year === "2017" || year === "2018") ? year : "2019";
 
     let matches = this.props.PingPong2019;
     if (year === "2017") matches = this.props.PingPong2017;
