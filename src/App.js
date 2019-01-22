@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import PPTable from './PPTable.js';
 import PPDraw from './PPDraw.js';
-const qs = require('query-string');
+const qs = require('querystring-es3');
 
 // import PPLastHeader from './PPLastHeader.js';
 import './App.css';
@@ -12,15 +12,15 @@ export default class App extends Component {
 
   render() {
     const d = new Date().toLocaleString();    
-//    console.log("APP", JSON.stringify(this.props.matches.Matches[0]));
-//    console.log("APP", JSON.stringify(this.props.PingPong2018.Matches[0]));
-    const xx = qs.parse(location.search);
-    let year = (xx.a === "2017" || xx.a === "2018") ? xx.a : "2019";
+    const xx = qs.parse(location.search.slice(1));
+    // adds a ? to the first property name
+    let year = (xx["year"]) ? xx["year"] : "2019" ;
+//    debugger;
+//    year = (year === "2017" || year === "2018") ? year : "2019";
 
-    if (year === "2019") year = "2018";
-    let matches = this.props.PingPong2018;
+    let matches = this.props.PingPong2019;
     if (year === "2017") matches = this.props.PingPong2017;
-    if (year === "2019") matches = this.props.PingPong2019;
+    if (year === "2018") matches = this.props.PingPong2018;
     
     return (
       <div className="App">
@@ -34,7 +34,7 @@ export default class App extends Component {
           <PPTable group="1" dbm={matches} />
           <PPTable group="2" dbm={matches} />
           <PPTable group="3" dbm={matches} />
-        </div>
+        </div>9
         <div className="columns">
           <PPTable group="4" dbm={matches} />
           <PPTable group="5" dbm={matches} />

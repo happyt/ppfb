@@ -47,6 +47,7 @@ pull the project
 Update 2019 similar to above
 - consolidated scores per year
 - didn't do firebase init
+- added query-string to pick up a year=2017 parameter
  - npm install -g pushstate-server
  - pushstate-server build
  - start http://localhost:9000
